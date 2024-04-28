@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheelsOnTheGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search...">
+
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to WheelsOnTheGo</h1>
+            <p>Rent a car today and explore the world!</p>
+        </section>
+
+        <section id="cars">
+            <h2>Our Cars</h2>
+            <div class="car-grid">
+                <div class="car">
+                    <img src="car1.jpg" alt="Car 1">
+                    <h3>Car 1</h3>
+                    <p>Price: $100/day</p>
+                </div>
+                <!-- Add more car divs here -->
+            </div>
+            <div class="filters">
+                <input type="checkbox" id="filter-electric" checked>
+                <label for="filter-electric">Electric</label>
+                <input type="checkbox" id="filter-automatic" checked>
+                <label for="filter-automatic">Automatic</label>
+                <label for="price-range">Price Range:</label>
+                <input type="range" id="price-range" min="0" max="200" step="10" value="100">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading car rental service committed to providing the best experience to our customers.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 WheelsOnTheGo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
